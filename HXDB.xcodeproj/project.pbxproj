@@ -15,6 +15,13 @@
 		57CA55991FC477F7008E8F95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CA55981FC477F7008E8F95 /* main.m */; };
 		57CA55A31FC477F7008E8F95 /* HXDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CA55A21FC477F7008E8F95 /* HXDBTests.m */; };
 		57CA55AE1FC477F7008E8F95 /* HXDBUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CA55AD1FC477F7008E8F95 /* HXDBUITests.m */; };
+		57CA55BD1FC478D7008E8F95 /* HXDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CA55BB1FC478D6008E8F95 /* HXDBManager.m */; };
+		57CA55CA1FC59C8B008E8F95 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CA55C01FC59C8B008E8F95 /* FMDatabase.m */; };
+		57CA55CB1FC59C8B008E8F95 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CA55C21FC59C8B008E8F95 /* FMDatabaseAdditions.m */; };
+		57CA55CC1FC59C8B008E8F95 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CA55C41FC59C8B008E8F95 /* FMDatabasePool.m */; };
+		57CA55CD1FC59C8B008E8F95 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CA55C61FC59C8B008E8F95 /* FMDatabaseQueue.m */; };
+		57CA55CE1FC59C8B008E8F95 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CA55C91FC59C8B008E8F95 /* FMResultSet.m */; };
+		57CA55D11FC6F603008E8F95 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CA55D01FC6F603008E8F95 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,21 @@
 		57CA55A91FC477F7008E8F95 /* HXDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HXDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CA55AD1FC477F7008E8F95 /* HXDBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXDBUITests.m; sourceTree = "<group>"; };
 		57CA55AF1FC477F7008E8F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57CA55BB1FC478D6008E8F95 /* HXDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXDBManager.m; sourceTree = "<group>"; };
+		57CA55BC1FC478D6008E8F95 /* HXDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXDBManager.h; sourceTree = "<group>"; };
+		57CA55BF1FC59C8B008E8F95 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		57CA55C01FC59C8B008E8F95 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		57CA55C11FC59C8B008E8F95 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		57CA55C21FC59C8B008E8F95 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		57CA55C31FC59C8B008E8F95 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		57CA55C41FC59C8B008E8F95 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		57CA55C51FC59C8B008E8F95 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		57CA55C61FC59C8B008E8F95 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		57CA55C71FC59C8B008E8F95 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		57CA55C81FC59C8B008E8F95 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		57CA55C91FC59C8B008E8F95 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		57CA55CF1FC6F603008E8F95 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		57CA55D01FC6F603008E8F95 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +103,7 @@
 		57CA557D1FC477F7008E8F95 = {
 			isa = PBXGroup;
 			children = (
+				57CA55BE1FC59C8B008E8F95 /* fmdb */,
 				57CA55881FC477F7008E8F95 /* HXDB */,
 				57CA55A11FC477F7008E8F95 /* HXDBTests */,
 				57CA55AC1FC477F7008E8F95 /* HXDBUITests */,
@@ -105,6 +128,10 @@
 				57CA558A1FC477F7008E8F95 /* AppDelegate.m */,
 				57CA558C1FC477F7008E8F95 /* ViewController.h */,
 				57CA558D1FC477F7008E8F95 /* ViewController.m */,
+				57CA55BC1FC478D6008E8F95 /* HXDBManager.h */,
+				57CA55BB1FC478D6008E8F95 /* HXDBManager.m */,
+				57CA55CF1FC6F603008E8F95 /* Person.h */,
+				57CA55D01FC6F603008E8F95 /* Person.m */,
 				57CA558F1FC477F7008E8F95 /* Main.storyboard */,
 				57CA55921FC477F7008E8F95 /* Assets.xcassets */,
 				57CA55941FC477F7008E8F95 /* LaunchScreen.storyboard */,
@@ -130,6 +157,25 @@
 				57CA55AF1FC477F7008E8F95 /* Info.plist */,
 			);
 			path = HXDBUITests;
+			sourceTree = "<group>";
+		};
+		57CA55BE1FC59C8B008E8F95 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				57CA55BF1FC59C8B008E8F95 /* FMDatabase.h */,
+				57CA55C01FC59C8B008E8F95 /* FMDatabase.m */,
+				57CA55C11FC59C8B008E8F95 /* FMDatabaseAdditions.h */,
+				57CA55C21FC59C8B008E8F95 /* FMDatabaseAdditions.m */,
+				57CA55C31FC59C8B008E8F95 /* FMDatabasePool.h */,
+				57CA55C41FC59C8B008E8F95 /* FMDatabasePool.m */,
+				57CA55C51FC59C8B008E8F95 /* FMDatabaseQueue.h */,
+				57CA55C61FC59C8B008E8F95 /* FMDatabaseQueue.m */,
+				57CA55C71FC59C8B008E8F95 /* FMDB.h */,
+				57CA55C81FC59C8B008E8F95 /* FMResultSet.h */,
+				57CA55C91FC59C8B008E8F95 /* FMResultSet.m */,
+			);
+			name = fmdb;
+			path = HXDB/fmdb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +312,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				57CA558E1FC477F7008E8F95 /* ViewController.m in Sources */,
+				57CA55CD1FC59C8B008E8F95 /* FMDatabaseQueue.m in Sources */,
+				57CA55D11FC6F603008E8F95 /* Person.m in Sources */,
+				57CA55BD1FC478D7008E8F95 /* HXDBManager.m in Sources */,
 				57CA55991FC477F7008E8F95 /* main.m in Sources */,
+				57CA55CA1FC59C8B008E8F95 /* FMDatabase.m in Sources */,
+				57CA55CC1FC59C8B008E8F95 /* FMDatabasePool.m in Sources */,
+				57CA55CE1FC59C8B008E8F95 /* FMResultSet.m in Sources */,
 				57CA558B1FC477F7008E8F95 /* AppDelegate.m in Sources */,
+				57CA55CB1FC59C8B008E8F95 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
