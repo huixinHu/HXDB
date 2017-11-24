@@ -8,7 +8,8 @@ FMDB的简单封装
 - 支持事务操作
 - 支持模型存储，但不支持集合类型、自定义类类型属性等等。（支持NSString、NSNumber、NSInteger 、BOOL、int、float、 double、NSData等简单类型属性）
 
-###1.数据库的创建
+1.数据库的创建
+-----------
 ```objectivec
 + (instancetype)shareDB;
 
@@ -28,7 +29,8 @@ self.hxdb = [HXDBManager shareDB:@"HXDB.sqlite"];
 self.hxdb = [HXDBManager shareDB:@"HXDB.sqlite" dbPath:@"hxDataBasePath"];
 ```
 
-###2.切换数据库
+2.切换数据库
+-----------
 考虑到有用户退出登录、切换到另一个用户账号的情况，每一个用户需要单独一份数据，所以需要切换数据库。
 
 ```objectivec
@@ -40,7 +42,8 @@ path参数是文件子路径，dbName是数据库名。
 [self.hxdb changeFilePath:[Utils HXNSStringMD5:appDelegate.userid] dbName:@"XiaoYa.sqlite"];
 ```
 
-###3.创建表
+3.创建表
+-----------
 方式1：根据sql语句创建表
 
 ```objectivec
@@ -111,7 +114,8 @@ path参数是文件子路径，dbName是数据库名。
 ```
 要注意，NSDictionary这种集合类型的属性不会作为表字段，除此之外还有NSArray、NSSet等集合类型。
 
-###4.删除表
+4.删除表
+-----------
 ```objectivec
 /**
 删除表
@@ -128,7 +132,8 @@ path参数是文件子路径，dbName是数据库名。
 }];
 ```
 
-###5.0增删改数据
+5.0增删改数据
+-----------
 直接传入sql语句进行增删查改
 
 ```objectivec
@@ -143,7 +148,8 @@ path参数是文件子路径，dbName是数据库名。
 - (void)updateWithSqlStatInTransaction:(NSArray <NSString *> *)sqlArr callback:(void(^)(NSError *error))block;
 ```
 
-###5.1插入数据
+5.1插入数据
+-----------
 1.插入单个模型
 
 ```objectivec
@@ -250,7 +256,8 @@ NSDictionary *paraDict = @{@"name":@"commet",@"phone":@"13535230987",@"identity"
 - (void)insertTableInTransaction:(NSString *)tableName paramArr:(NSArray <NSDictionary *>*)paraArr callback:(void(^)(NSError *error))block;
 ```
 
-###5.2更新数据
+5.2更新数据
+-----------
 1.更新指定模型数据
 
 ```objectivec
@@ -355,7 +362,8 @@ NSDictionary *paraDict = @{@"name":@"commet",@"phone":@"13535230987"};
 - (void)updateTableInTransaction:(NSString *)tableName paramArr:(NSArray <NSDictionary *>*)paraArr whereArrs:(NSArray <NSDictionary *>*)whereArr callback:(void(^)(NSError *error))block;
 ```
 
-###5.3删除数据
+5.3删除数据
+-----------
 1.删除指定数据
 
 ```objectivec
@@ -401,7 +409,8 @@ NSMutableArray *deleteWhere = [NSMutableArray array];
 }];
 ```
 
-###6.查询
+6.查询
+-----------
 1.根据条件查询有多少条记录
 
 ```objectivec
@@ -470,7 +479,8 @@ NSLog(@"rs:%@",rsArr);
 - (NSMutableArray *)queryAll:(NSString *)tableName callback:(void(^)(NSError *error))block;
 ```
 
-###其他
+其他
+-----------
 一般为了防止ui卡死，把数据库操作放在异步线程。比如：
 
 ```
